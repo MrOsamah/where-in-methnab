@@ -50,7 +50,7 @@ body {
 
 @media (min-width: 992px) {
   .navbar-side {
-    width: 35%;
+    width: 50%;
   }
   .locations-list-li {
     font-size: .5rem;
