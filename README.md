@@ -18,3 +18,8 @@ You are more than welcome to fix a bug or add a feature, actually, I would love 
 - [Foursquare API Guide](https://developer.foursquare.com/docs/api/getting-started).
 - Knockout.js [ [1](http://knockoutjs.com/documentation/introduction.html) , [2](https://www.youtube.com/watch?v=xnBROE-RHW0) , [3](https://stackoverflow.com/questions/34584181/create-live-search-with-knockout) ].
 - [GitHub Inspiration](https://github.com/kenziejoy/frontend-nanodegree-map/blob/master/main2.js).
+
+### Others
+- [Icons](https://www.iconfinder.com/iconsets/map).
+- [JSHint](http://jshint.com/).
+- [jsbeautifier.org](http://jsbeautifier.org/).
