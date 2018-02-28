@@ -7,7 +7,7 @@ This is one of the last projects in Udacity's Front-End Developer nanodegree. It
 You can see a live demo [Here](https://mrosamah.github.io/where-in-methnab/).
 
 ### Contribution
-You are more than welcome to fix a bug or add a feature, actually, I would love that xD
+You are more than welcome to fix a bug or add a feature, actually, I would love to xD
 
 ### References
 - Class Material.
