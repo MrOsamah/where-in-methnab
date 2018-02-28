@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Where In Methnab</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- TODO: remove comments -->
+  <!-- https://codediode.io/lessons/198631-design-a-responsive-side-menu-for-bootstrap-4 -->
+  <nav class="navbar navbar-dark navbar-static bg-faded" role="navigation">
+  <ul class="nav navbar-nav">
+    <!-- insert more nav-items if you so choose -->
+    <button class="navbar-toggler pull-xs-right" id="navbarSideButton" type="button">
+      &#9776;
+    </button>
+  </ul>
+  <ul class="navbar-side" id="navbarSide">
+    <h4 class="mx-1 my-3">Filter the locations:</h4>
+    <input placeholder="Location" class="form-control mx-auto my-2" id="filter" type="text" data-bind="textInput: filter"/>
+    <ul data-bind="foreach: visibleLocations">
+      <li class="navbar-side-item locations-list-li mx-auto my-auto" data-bind="text: title, click: $parent.markerAnimation"></li>
+    </ul>
+  </ul>
+  <!-- insert more side-items if you so choose -->
+  </ul>
+  <div class="overlay"></div>
+  </nav>
+
+  <div class="container">
+    <div class="row mb-4 mt-0">
+      <div class="col text-center">
+        <h1 class="display-3 text-white">Where to go in Almethnab</h1>
+      </div>
+    </div>
+      <div class="row">
+        <div class="col" id="map">
+        </div>
+      </div>
+  </div>
+
+  <div class="modal fade" id="errorMsg" tabindex="-1" role="dialog" aria-labelledby="errorMsgFourSquare" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="errorMsgTitle">Something wrong happend!</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5 data-bind="text: errorMsgContentFS" id="errorMsgContent"></h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['El Messiri', 'sans-serif']
+      }
+    });
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="js/main.js"></script>
+  </script>
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-CgJpNAgnvpnuOWifAUChDNmS3a4y470&callback=initMap">
+  </script>
+</body>
+</html>
