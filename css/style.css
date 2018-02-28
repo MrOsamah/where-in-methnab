@@ -21,7 +21,7 @@ body {
   transition: 300ms ease;
 }
 
-@media (min-width: 305px) {
+@media (min-width: 280px) {
   .navbar-side {
     width: 50%;
   }
