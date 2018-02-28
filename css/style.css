@@ -19,9 +19,42 @@ body {
   transform: translateX(-100%);
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
-  @include media-breakpoint-up(xs) { width: 85%; } // Small
-  @include media-breakpoint-up(sm) { width: 50%; } // Medium
-  @include media-breakpoint-up(md) { width: 25%; } // Large
+}
+
+@media (min-width: 305px) {
+  .navbar-side {
+    width: 50%;
+  }
+  .locations-list-li {
+    font-size: .1rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .navbar-side {
+    width: 50%;
+  }
+  .locations-list-li {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-side {
+    width: 50%;
+  }
+  .locations-list-li {
+    font-size: .5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-side {
+    width: 35%;
+  }
+  .locations-list-li {
+    font-size: .5rem;
+  }
 }
 
 .reveal {
@@ -60,7 +93,7 @@ body {
 .locations-list-li {
   list-style-type: none;
   text-align: center;
-  font-size: .8rem;
+  font-size: 1.4rem;
   font-family: 'El Messiri', sans-serif;
 }
 
