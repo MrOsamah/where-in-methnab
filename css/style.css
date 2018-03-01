@@ -90,6 +90,15 @@ body {
   font-size: 2rem;
 }
 
+.sad-icon {
+  font-size: 10rem;
+  opacity: 0.15;
+  color: #1b1b1b;
+  position: absolute;
+  left: 16rem;
+  top: 3rem;
+}
+
 .locations-list-li {
   list-style-type: none;
   text-align: center;
@@ -97,8 +106,8 @@ body {
   font-family: 'El Messiri', sans-serif;
 }
 
-#map {
-  height: 500px;
+.map-canvas {
+  height: 480px;
 }
 
 .location-title {

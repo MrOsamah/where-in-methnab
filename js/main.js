@@ -99,6 +99,12 @@ var Location = function(data) {
     self.content = ko.observable("");
 };
 
+function errorMsgGoogle() {
+    console.log("Error Google Maps Call");
+    $("#errorMsgGoogle").text("We couldn't create the map.");
+    $("#errorMsg").modal("show");
+}
+
 // Here is the function to build the map, then it calls a new instence of the ViewModel
 // which will bind the observables and call the APIs and make markers.
 function initMap() {
@@ -281,6 +287,6 @@ var ViewModel = function() {
         });
     }, this);
 
-    // Error messeges
-    this.errorMsgContentFS = ko.observable("We didn't get a response from Foursquare API.");
+    // Error messege
+    this.errorMsgContentFS = "We didn't get a response from Foursquare API.";
 };
