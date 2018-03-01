@@ -8,7 +8,7 @@ You can see a live demo [Here](https://mrosamah.github.io/where-in-methnab/).
 If you want to run this application locally:
 1. Clone/download this repository to your client.
 2. You can double click on index.html, OR:
-2.- Run a [local server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server) in this repository's folder.
+Run a [local server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server) in this repository's folder.
 
 ### Contribution
 You are more than welcome to fix a bug or add a feature, actually, I would love to xD
