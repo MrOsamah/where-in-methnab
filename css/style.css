@@ -26,7 +26,16 @@ body {
     width: 50%;
   }
   .locations-list-li {
-    font-size: .1rem;
+    font-size: .2rem;
+  }
+}
+
+@@media (max-width: 576px) {
+  .navbar-side {
+    width: 50%;
+  }
+  .locations-list-li {
+    font-size: .2rem;
   }
 }
 
@@ -35,7 +44,7 @@ body {
     width: 50%;
   }
   .locations-list-li {
-    font-size: .8rem;
+    font-size: .2rem;
   }
 }
 
@@ -44,7 +53,7 @@ body {
     width: 50%;
   }
   .locations-list-li {
-    font-size: .5rem;
+    font-size: .3rem;
   }
 }
 
@@ -53,7 +62,7 @@ body {
     width: 30%;
   }
   .locations-list-li {
-    font-size: .5rem;
+    font-size: .6rem;
   }
 }
 
